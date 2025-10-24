@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+    font-family:sans-serif;
+}
+main{
+    height: 100%;
+    width:100%;
+    background-color: black;
+}
+nav{
+    height: 60px;
+    width: 100%;
+    background-color:white;
+    display:flex;
+    justify-content:space-around;  
+    align-items: center;
+}
+.nav-left a,
+.nav-right a,
+.nav-center a {
+  color: black;
+  text-decoration: none;
+  margin: 0 30px;
+}
+.nav-left{
+    font-size:20px;
+    font-weight:600;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-left .name{
+    margin-left:10px;
+    font-weight:600;
+    font-size:25px;
+    /* border: 2px solid black; */
+}
+.nav-left img{
+    height:40px;
+    width:40px;
+}
+.nav-right button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 0 5px;
+}
+.nav-right .signup-btn{
+    background-color:transparent;
+    border: 2px solid blue;
+    cursor: pointer;
+    color: blue;
+}
+.nav-right .getstarted-btn{
+    background-color:blue;
+    border: none;
+    cursor: pointer;
+    color:white
+}
+

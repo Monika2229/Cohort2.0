@@ -1,0 +1,49 @@
+@font-face {
+    font-family: hey;
+    src: url(./swinging_wake/Swinging\ Wake.otf);
+}
+@font-face {
+    font-family: hi;
+    src: url(./cakecafe/Cakecafe.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    background-image: url(https://images.unsplash.com/photo-1532974297617-c0f05fe48bff?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size:cover;
+    background-position:center;
+}
+#main h1{
+    color: white;
+    text-align: center;
+    margin-left:10%;
+    padding:25px;
+    font-size: 60px;
+    font-family: hey;
+    font-weight: normal;
+    text-shadow: 2px 2px 4px rgba(0,0,0,1);
+    letter-spacing: 3px;
+}
+#main button{
+    margin-left:50%;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+    font-family: hi;
+    border:white 2px solid;
+}

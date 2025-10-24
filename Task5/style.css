@@ -1,0 +1,87 @@
+@font-face {
+    font-family: f1;
+    src: url("./stranger_back_in_the_night/Stranger\ back\ in\ the\ Night.ttf");
+}
+
+@font-face {
+    font-family: f2;
+    src: url("./cheap_fire/chp-fire.ttf");
+}
+
+@font-face {
+    font-family: f3;
+    src: url("./korean_calligraphy/Korean_Calligraphy.ttf");
+}
+*{
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-image: url("https://i.pinimg.com/736x/2e/f8/9d/2ef89ddcff37fb48f1745a16fa9a508e.jpg");
+    background-size: cover;
+    padding: 50px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-family:f2;
+}
+
+.box {
+    height: 300px;
+    width: 250px;
+    background: linear-gradient(135deg, #ff512f, #f09819, #8e0e00);
+    position: relative;
+    overflow: hidden;
+    border: 3px solid whitesmoke;
+    border-radius: 20px;
+}
+
+.box img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 20px solid white;
+}
+
+.bottom {
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent, black);
+    position: absolute; 
+    bottom: -40%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all ease 0.4s;
+}
+
+.bottom h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bottom h3 {
+    color: red;
+    background-color: white;
+    padding: 5px 8px;
+    border-radius: 50%;
+}
+
+.box:hover .bottom {
+    bottom: 0;
+}
+
+
