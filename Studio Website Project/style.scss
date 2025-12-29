@@ -25,7 +25,7 @@ body {
   gap: $gap;
 }
 
-section {
+section{
   max-width: 1600px;
 }
 
@@ -34,7 +34,7 @@ main {
   @include flex-center(0rem);
   align-items: center;
 
-  section{
+  section.view1 {
     width: 100%;
     @include flex-center(1rem);
     padding: 1rem;
