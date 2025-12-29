@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+html,body {
+  height:100%;
+  width:100%;
+}
+main{
+    height:100%;
+    width:100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    flex-direction: column;
+}
+h1{
+    font-weight:100px;
+    background-color: teal;
+    padding: 40px 50px;
+    border-radius: 10px;
+    font-family: monospace;
+}
+button{
+    padding:10px 20px;
+    background-color: crimson;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+button:hover{
+    cursor: pointer;
+    background-color: darkred;
+}
