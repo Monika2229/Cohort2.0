@@ -264,7 +264,7 @@ var arr = [
         fullname: "Royal Challengers Bangalore",
         primarycolor: "Red",
         secondarycolor: "Black"
-    }, 
+    },
     {
         Team: "KKR",
         Captain: "Shreyas Iyer",
@@ -293,7 +293,7 @@ var arr = [
 
 var btn = document.querySelector("button");
 var h1 = document.querySelector("h1");
-var ma= document.querySelector("main");
+var ma = document.querySelector("main");
 
 btn.addEventListener("click", function () {
     var winnerTeam = arr[Math.floor(Math.random() * arr.length)];
@@ -303,5 +303,6 @@ btn.addEventListener("click", function () {
     h1.style.transition = "all 0.5s ease-in-out";
     ma.style.transition = "all 0.5s linear-in-out";
     h1.style.color = "#fff";
+    //commit changes
 });
 
