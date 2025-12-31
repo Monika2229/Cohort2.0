@@ -8,31 +8,29 @@ html,body {
   height:100%;
   width:100%;
 }
+body{
+    background-color: black;
+}
 main{
     height:100%;
     width:100%;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:20px;
-    flex-direction: column;
-}
-h1{
-    font-weight:100px;
-    background-color: teal;
-    padding: 40px 50px;
-    border-radius: 10px;
-    font-family: monospace;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 button{
-    padding:10px 20px;
-    background-color: crimson;
-    border: none;
-    border-radius: 5px;
-    font-weight: 600;
-}
-button:hover{
+    padding: 20px 30px;
+    font-size: 20px;
     cursor: pointer;
-    background-color: darkred;
+    border-radius: 10px;
+    border: none;
+    background-color:rgb(185, 100, 185);
+    position: relative;
+    z-index:3;
+}
+button:active{
+    scale:0.9;
+}
+h1{
+    white-space: nowrap;
 }

@@ -240,69 +240,91 @@
 // console.log(finalresut);
 
 
-var arr = [
-    {
-        Team: "CSK",
-        Captain: "MS Dhoni",
-        Championships: 4,
-        fullname: "Chennai Super Kings",
-        primarycolor: "Yellow",
-        secondarycolor: "Blue"
-    },
-    {
-        Team: "MI",
-        Captain: "Rohit Sharma",
-        Championships: 5,
-        fullname: "Mumbai Indians",
-        primarycolor: "Blue",
-        secondarycolor: "Gold"
-    },
-    {
-        Team: "RCB",
-        Captain: "Faf du Plessis",
-        Championships: 0,
-        fullname: "Royal Challengers Bangalore",
-        primarycolor: "Red",
-        secondarycolor: "Black"
-    },
-    {
-        Team: "KKR",
-        Captain: "Shreyas Iyer",
-        Championships: 2,
-        fullname: "Kolkata Knight Riders",
-        primarycolor: "Purple",
-        secondarycolor: "Gold"
-    },
-    {
-        Team: "SRH",
-        Captain: "Aiden Markram",
-        Championships: 1,
-        fullname: "Sunrisers Hyderabad",
-        primarycolor: "Orange",
-        secondarycolor: "Black"
-    },
-    {
-        Team: "DC",
-        Captain: "Rishabh Pant",
-        Championships: 0,
-        fullname: "Delhi Capitals",
-        primarycolor: "Blue",
-        secondarycolor: "Red"
-    }
-];
+// var arr = [
+//     {
+//         Team: "CSK",
+//         Captain: "MS Dhoni",
+//         Championships: 4,
+//         fullname: "Chennai Super Kings",
+//         primarycolor: "Yellow",
+//         secondarycolor: "Blue"
+//     },
+//     {
+//         Team: "MI",
+//         Captain: "Rohit Sharma",
+//         Championships: 5,
+//         fullname: "Mumbai Indians",
+//         primarycolor: "Blue",
+//         secondarycolor: "Gold"
+//     },
+//     {
+//         Team: "RCB",
+//         Captain: "Faf du Plessis",
+//         Championships: 0,
+//         fullname: "Royal Challengers Bangalore",
+//         primarycolor: "Red",
+//         secondarycolor: "Black"
+//     },
+//     {
+//         Team: "KKR",
+//         Captain: "Shreyas Iyer",
+//         Championships: 2,
+//         fullname: "Kolkata Knight Riders",
+//         primarycolor: "Purple",
+//         secondarycolor: "Gold"
+//     },
+//     {
+//         Team: "SRH",
+//         Captain: "Aiden Markram",
+//         Championships: 1,
+//         fullname: "Sunrisers Hyderabad",
+//         primarycolor: "Orange",
+//         secondarycolor: "Black"
+//     },
+//     {
+//         Team: "DC",
+//         Captain: "Rishabh Pant",
+//         Championships: 0,
+//         fullname: "Delhi Capitals",
+//         primarycolor: "Blue",
+//         secondarycolor: "Red"
+//     }
+// ];
 
-var btn = document.querySelector("button");
-var h1 = document.querySelector("h1");
-var ma = document.querySelector("main");
+// var btn = document.querySelector("button");
+// var h1 = document.querySelector("h1");
+// var ma = document.querySelector("main");
 
-btn.addEventListener("click", function () {
-    var winnerTeam = arr[Math.floor(Math.random() * arr.length)];
-    h1.innerHTML = `${winnerTeam.Captain}`;
-    h1.style.backgroundColor = `${winnerTeam.primarycolor}`;
-    ma.style.backgroundColor = `${winnerTeam.secondarycolor}`;
-    h1.style.transition = "all 0.5s ease-in-out";
-    ma.style.transition = "all 0.5s linear-in-out";
-    h1.style.color = "#fff";
-    //commit changes
-});
+// btn.addEventListener("click", function () {
+//     var winnerTeam = arr[Math.floor(Math.random() * arr.length)];
+//     h1.innerHTML = `${winnerTeam.Captain}`;
+//     h1.style.backgroundColor = `${winnerTeam.primarycolor}`;
+//     ma.style.backgroundColor = `${winnerTeam.secondarycolor}`;
+//     h1.style.transition = "all 0.5s ease-in-out";
+//     ma.style.transition = "all 0.5s linear-in-out";
+//     h1.style.color = "#fff";
+//     //commit changes
+// });
 
+var btn=document.querySelector("button");
+var main =document.querySelector("main");
+
+var arr=["Nani","Vijay Devarakonda","Allu Arjun","Mahesh Babu","Ram Charan","Jr NTR","Prabhas","Rana Daggubati","Ajith","Vikram","Suriya","Dhanush","Karthi","Sivakarthikeyan"];
+btn.addEventListener("click",function(){
+    var b = document.createElement("h1");
+    var actor=Math.floor(Math.random()*arr.length);
+    var top=Math.floor(Math.random()*80);
+    var left=Math.floor(Math.random()*80);
+    var rot=Math.floor(Math.random()*360);
+    var cl= Math.floor(Math.random()*256);
+    var c2= Math.floor(Math.random()*256);
+    var c3= Math.floor(Math.random()*256);
+    b.style.color=`rgb(${cl},${c2},${c3})`;
+    b.style.rotate=rot+"deg";
+    b.style.top=top+"%";
+    b.style.left=left+"%";
+    b.innerHTML=arr[actor];
+    b.style.position="absolute";
+    main.appendChild(b);
+    console.log(actor);
+})
